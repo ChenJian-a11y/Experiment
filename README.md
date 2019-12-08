@@ -26,12 +26,20 @@
 ## 三、操作过程：
 ### （1）运行程序后会出现一个登录界面，然后我们要先注册账号。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/1.PNG)
-### （2）运行程序后会先显示出加完标点符号的《长恨歌》（每7个汉字加入一个标点符号，奇数时加“，”，偶数时加“。”），运行截图如图所示。
-![images](https://github.com/COLLIN-BAI/poem/blob/master/images/1.PNG)
-### （3）显示出加标点符号的《长恨歌》后，会显示”输入参数，统计古诗中某个字或词出现的次数：”，运行截图如图所示。
-![images](https://github.com/COLLIN-BAI/poem/blob/master/images/2.PNG)
-### （4）输入参数，会统计古诗中某个字或词出现的次数，操作演示如图所示。
-![images](https://github.com/COLLIN-BAI/poem/blob/master/images/3.PNG)
+### （2）注册的时候我们会有密码和确认密码两次输入密码的步骤，来确保注册账号密码的时候没有错误。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/2.PNG)
+### （3）注册成功后会弹出注册成功的窗口，会提醒您注册成功。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/3.PNG)
+### （4）点击确认后会在册弹出登陆界面，然后输入注册的账号密码和验证码。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/4.PNG)
+### （5）点击登陆后会弹出提示框，提示您已经注册成功。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/5.PNG)
+### （6）点击确认后会出现一个功能按钮框，可以选择要操作的功能。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/6.PNG)
+### （7）如果点击Choosecourse，会弹出选课的界面。我们点击按钮就可以进行选课，选课信息也会显示在选课窗口上供我们参考。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/7.PNG)
+### （8）
+
 
 ## 四、核心代码：
 ### 1.统计古诗中某个字或词出现的次数方法：
