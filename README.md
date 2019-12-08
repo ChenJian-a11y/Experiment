@@ -48,7 +48,14 @@
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/10.PNG)
 ### （12）退课完的信息同样会写入txt文档。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/15.PNG)
-### （13）关掉退课界面，我们点击AddCourse，会弹出选课的界面，我们可以填写要选课的信息
+### （13）关掉关掉退课界面，我们点击printcoourse，会弹出打印课程界面，从txt文档里面读取选课信息然后打印显示出来。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/11.PNG)
+### （14）关掉打印界面，我们点击AddCourse，会弹出选课的界面，我们可以填写要选课的信息。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/12.PNG)
+### （15）点击保存后，选课信息会写入txt文档。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/17.PNG)
+### （16）然后关掉添加课程界面，点击printcourse，会弹出打印课程界面，从txt文档里面读取选课信息然后打印显示出来。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/13.PNG)
 
 ## 四、核心代码：
 ### 1.统计古诗中某个字或词出现的次数方法：
