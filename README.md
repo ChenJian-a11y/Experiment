@@ -56,8 +56,9 @@
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/17.PNG)
 ### （16）然后关掉添加课程界面，点击printcourse，会弹出打印课程界面，从txt文档里面读取选课信息然后打印显示出来。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/13.PNG)
-
-## 四、核心代码：
+## 四、程序框图：
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/18.PNG)
+## 五、核心代码：
 ### 1.统计古诗中某个字或词出现的次数方法：
 ```
 //使用String类的contain()方法，判断整串中是否包含子串     srcStr父字符串  findStr子字符串
