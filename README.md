@@ -38,7 +38,14 @@
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/6.PNG)
 ### （7）如果点击Choosecourse，会弹出选课的界面。我们点击按钮就可以进行选课，选课信息也会显示在选课窗口上供我们参考。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/7.PNG)
-### （8）
+### （8）如果选完课程会提示您选课成功。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/8.PNG)
+### （9）点击确认后，会把选课信息写入txt文件中保存。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/14.PNG)
+### （10）关掉选课界面，我们点击Quitcourse，会弹出退课的界面，我们选择要退的课程（按住CTRL键点击要退的课程可一次选择多个课程）。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/9.PNG)
+### （11）选择完毕后点击退课按钮，会弹出退课成功的对话框。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/10.PNG)
 
 
 ## 四、核心代码：
