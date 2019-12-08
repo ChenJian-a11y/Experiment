@@ -22,8 +22,9 @@
 #### 3、针对操作过程中可能会出现的各种异常，做异常处理
 #### 4、基于输入/输出编程，支持学生、课程、教师等数据的读写操作。
 #### 5、基于Github.com提交实验，包括实验SRC源文件夹程序、README.MD实验报告文档。
-
-## 三、操作过程：
+## 三、程序框图：
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/18.PNG)
+## 四、操作过程：
 ### （1）运行程序后会出现一个登录界面，然后我们要先注册账号。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/1.PNG)
 ### （2）注册的时候我们会有密码和确认密码两次输入密码的步骤，来确保注册账号密码的时候没有错误。
@@ -56,8 +57,6 @@
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/17.PNG)
 ### （16）然后关掉添加课程界面，点击printcourse，会弹出打印课程界面，从txt文档里面读取选课信息然后打印显示出来。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/13.PNG)
-## 四、程序框图：
-![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/18.PNG)
 ## 五、核心代码：
 ### 1、Frame方法设置标题名称Choice Course，JRadioButtonDemo方法创建单选按钮。
 ```
@@ -160,9 +159,5 @@ a.setVisible(true);
 ```
 this.dispose();
 ```
-
-
-
-
 ## 六、实验感想：
 ### 本次实验分析了学生选课系统，使用了GUI窗体及其组件设计窗体界面，完成了学生选课过程业务逻辑编程，学会了基于文件保存并读取数据和处理异常。本次实验的总体难度较大，题目理解起来就比上几次实验难度大很多，写出这次实验查阅了很多书籍上面和网络上面的资料，用了很长时间来调试代码，通过实验让我明白，光有理论是不行的，还要结合实践才能让自己学以致用，能发现很多错误，及时纠正。
