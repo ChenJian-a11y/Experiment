@@ -30,7 +30,7 @@
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/2.PNG)
 ### （3）注册成功后会弹出注册成功的窗口，会提醒您注册成功。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/3.PNG)
-### （4）点击确认后会在册弹出登陆界面，然后输入注册的账号密码和验证码。
+### （4）点击确定后会在册弹出登陆界面，然后输入注册的账号密码和验证码。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/4.PNG)
 ### （5）点击登陆后会弹出提示框，提示您已经注册成功。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/5.PNG)
