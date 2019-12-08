@@ -40,13 +40,15 @@
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/7.PNG)
 ### （8）如果选完课程会提示您选课成功。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/8.PNG)
-### （9）点击确认后，会把选课信息写入txt文件中保存。
-![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/14.PNG)
-### （10）关掉选课界面，我们点击Quitcourse，会弹出退课的界面，我们选择要退的课程（按住CTRL键点击要退的课程可一次选择多个课程）。
+### （9）点击确认后，会把选课信息写入txt文档中保存。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/16.PNG)
+### （10）关掉选课界面，我们点击Quitcourse，会弹出退课的界面，从txt文档里面读取选课信息然后显示出来，我们选择要退的课程（按住CTRL键点击要退的课程可一次选择多个课程）。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/9.PNG)
 ### （11）选择完毕后点击退课按钮，会弹出退课成功的对话框。
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/10.PNG)
-
+### （12）退课完的信息同样会写入txt文档。
+![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/15.PNG)
+### （13）关掉退课界面，我们点击AddCourse，会弹出选课的界面，我们可以填写要选课的信息
 
 ## 四、核心代码：
 ### 1.统计古诗中某个字或词出现的次数方法：
