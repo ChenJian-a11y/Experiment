@@ -59,46 +59,110 @@
 ## 四、程序框图：
 ![images](https://github.com/COLLIN-BAI/Experiment/blob/master/images/18.PNG)
 ## 五、核心代码：
-### 1.统计古诗中某个字或词出现的次数方法：
+### 1、Frame方法设置标题名称Choice Course，JRadioButtonDemo方法创建单选按钮。
 ```
-//使用String类的contain()方法，判断整串中是否包含子串     srcStr父字符串  findStr子字符串
-	public static int count(String srcStr, String findStr) {
-		int count = 0;
-		int index = 0;
-    //indexOf()的用法：返回字符中indexOf（String）中子串String在父串中首次出现的位置，从0开始！没有返回-1
-		while ((index = srcStr.indexOf(findStr, index)) != -1) {
-			index = index + findStr.length();
-      //count数值加1
-			count++; // +1   
-		}
-    //返回值count
-		return count;  
+JFrame frame = new JFrame("Choice Course");//用JFrame方法设置标题名称Choice Course
+JRadioButton rb1 = new JRadioButton("JRadioButton 1");//用JRadioButtonDemo方法创建6个单选按钮。
+```
+### 2、定义空数组，接收选择课程信息
+```
+Array strarray=new Array();//定义空数组，接收选择课程信息
+String[] array0=strarray.getArray();
+String[] array1=new String[6];
+```
+### 3、创建JPanel对象赋值给p1引用。
+```
+JPanel p1 = new JPanel();//创建JPanel对象赋值给p1引用。
+```
+### 4、用btn1.addActionListener(new ActionListener(){}）方法来告诉btn1有一个方法可以引用：actionPerformed对象存到了btn1的list集合中，当我按下这个button的时候，他会循环这个list看里面有东西没，有东西的话就拿出来，然后转化成ActionListener 类型的对象.（监听器）
+```
+ActionListener a1 = new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JRadioButton rb = (JRadioButton) e.getSource();
+				if(rb == rb1) {
+					ta.append("\n  1   科目:数学      教室 :教201      时间:9：40   老师:    赵老师      性别: 男     "+rb1.isSelected());
+				    array1[0]=array0[0];//把课程信息写入数组
+				}
+				......
+```
+### 5、把选课信息写入数组：
+```
+writeFile(array1);//把选课信息写入数组
+```
+### 6、选课信息写入txt文件，包含异常处理：
+```
+public static void writeFile(String[] s) {
+        try {
+            File writeName = new File("C:\\Users\\李柏灿\\Desktop\\Java\\java实验二\\SJ.txt"); // 相对路径，如果没有则要建立一个新的output.txt文件
+            writeName.createNewFile(); // 创建新文件,有同名的文件的话直接覆盖
+            try (FileWriter writer = new FileWriter(writeName);//异常处理
+                 BufferedWriter out = new BufferedWriter(writer)
+            ) {
+            	for(int i=0;i<s.length;i++) {
+            		if(s[i]!=null) {
+            		out.write(s[i]); // \r\n即为换行
+            	}
+                out.flush(); // 把缓存区内容压入文件
+            }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+```
+### 7、读取txt文件信息，包含异常处理：
+```
+public static String readFile() {
+			String str="";
+	        String pathname = "C:\\Users\\李柏灿\\Desktop\\Java\\java 实验二\\SJ.txt"; // 绝对路径或相对路径都可以，写入文件时演示相对路径,读取以上路径的input.txt文件
+	        //防止文件建立或读取失败，用catch捕捉错误并打印，也可以throw;
+	        //不关闭文件会导致资源的泄露，读写文件都同理
+	        //Java7的try-with-resources可以优雅关闭文件，异常时自动关闭文件；详细解读https://stackoverflow.com/a/12665271
+	        try (FileReader reader = new FileReader(pathname);
+	             BufferedReader br = new BufferedReader(reader) // 建立一个对象，它把文件内容转成计算机能读懂的语言
+	        ) {
+	            String line;
+	            //网友推荐更加简洁的写法
+	            while ((line = br.readLine()) != null) {
+	                // 一次读入一行数据
+	            	str=str+line;
+	            }
+	 
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	        return str;
+	    }
 	}
 ```
-### 2.给无标点符号的《长恨歌》加标点方法：
+### 8、读取“。”删除数组，并判断是否退课：
 ```
-public static void printsplit(String strsplit) {
-	for (int i = 0; i<strsplit.length(); i = i+7) {//判断长度是否大于i
-		if( i%2 == 0 ){//如果i除以2的余数不为零，为奇数个字。
-			String split = strsplit.substring(i, i+7);//截取字符串从i到i+7。
-			System.out.print(split+ "，");			//输出加逗号。
-		} 
-		if( i%2 == 1 ){//如果i除以2的余数为零，为偶数个字。
-			String split = strsplit.substring(i, i+7);//截取字符串从i到i+7
-			System.out.print(split+ "。" + "\n");		//输出加句号。	
-		} 
-	}	
-}
+public void actionPerformed(ActionEvent arg0) {
+				String[] str1 = readFile().split("。");//读取“。”
+				if(List.isSelectionEmpty()) {//判断是否退课
+					JOptionPane.showMessageDialog(null, "您没有退课");
+					return;
+				}
+				for(int i=0;i<str1.length;i++) {//判断字符长度
+					if(List.isSelectedIndex(i)) {
+						str1[i] = null;
+					}
+					else {
+						str1[i] = str1[i]+"。";
+					}
+				}
 ```
-### 3.异常处理方法：
+### 8、点击按钮能实现窗口的弹出：
 ```
-           try {
-               System.out.println("输入参数，统计古诗中某个字或词出现的次数：" );
-               strs = br.readLine();
-           }catch(IOException e){
-               e.printStackTrace();
-           }
-           break;
+JRadioButtonDemo a = new JRadioButtonDemo();
+a.setVisible(true);
 ```
+### 9、窗口关闭：
+```
+this.dispose();
+```
+
+
+
+
 ## 五、实验感想：
 ### 本次实验掌握了字符串String及其方法的使用，掌握了异常处理结构，掌握了Eclipse 运行配置(Run Configuration)里的Argument里面添加到main方法中的添加参数的方法
